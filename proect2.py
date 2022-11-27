@@ -35,8 +35,6 @@ class Anemi(GameSprite):
 
 cube = Player("12.png",10, 560, 80, 80, 5)
 
-
-
 lal = sprite.Group()
 lol = sprite.Group()
 font1 = font.SysFont("Arial",80)
@@ -74,6 +72,7 @@ while run:
         lol.update()
         lal.draw(window)
         lal.update()
+
     
         
 
@@ -84,7 +83,8 @@ while run:
         if life == 0:
             finish = True
             window.blit(lose,(500,300))
-        
+
+              
         
         text_life = font2.render(str(life), True, (255,0,0))
         window.blit(text_life,(650,10))
